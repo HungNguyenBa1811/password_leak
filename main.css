@@ -1,0 +1,66 @@
+/* This section is updated by KhanhNguyen2712 */
+@font-face {
+    font-family: 'Dongle';
+    src: url('./fonts/Dongle-Light.ttf');
+}
+
+body {
+    font-family: 'Dongle', sans-serif;
+    animation: fadein 1s ease-in-out;
+}
+
+@media all and (max-width:768px) {
+    .copyright {
+        font-size: 27px;
+    }
+
+    #greet {
+        font-size: 55px;
+    }
+
+    #linkToEnd{
+        font-size: 50px;
+    }
+}
+
+@media all and (min-width:768px) {
+    .copyright {
+        font-size: 50px;
+    }
+
+    #greet {
+        font-size: 70px;
+    }
+
+    #linkToEnd{
+        font-size: 60px;
+    }
+}
+
+#greet {
+    font-weight: bold;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+@keyframes fadein{
+    0%{opacity:0}
+    100%{opacity: 1}
+}
+
+#linkToEnd{
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    transition: 0.5s;
+}
+
+#linkToEnd:hover{
+    color:red;
+}
